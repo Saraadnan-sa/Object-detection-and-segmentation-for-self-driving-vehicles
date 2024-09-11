@@ -3,15 +3,6 @@
 ## Project Overview
 This Jupyter Notebook facilitates object detection tasks for self-driving cars using the YOLOv8 model. It involves environment setup, data handling, and preparation for model training and evaluation.
 
-## Architecture Diagram
-
-![image](https://github.com/user-attachments/assets/9275f1e8-d335-4590-b101-de7ebe09e99a)
-
-The architecture diagram illustrates the following components:
-- **Feature Extractor**: This component takes an input image and extracts relevant features using a pre-trained backbone network.
-- **Neck**: This intermediate part processes the extracted features and prepares them for the detection head. It typically involves upsampling and concatenation operations.
-- **Detection Head**: This final component predicts bounding boxes and class probabilities for the detected objects. It often uses a feature pyramid network (FPN) to handle objects of different sizes.
-
 ## Contents
 - **Environment Setup**: Ensures the system has the required GPU resources available for training.
 - **Data Exploration**: Lists and verifies the contents of the dataset directory, specifically targeting images and labels required for object detection.
@@ -41,6 +32,15 @@ The dataset used in this project should be placed in the `/kaggle/input/self-dri
 ## Outputs
 - **Trained Model**: YOLOv8 model files will be saved in the `/kaggle/working/yolov8` directory.
 - **Logs and Metrics**: Output from training, including logs and performance metrics, will be stored within the notebook.
+
+## Architecture Diagram
+
+![image](https://github.com/user-attachments/assets/9275f1e8-d335-4590-b101-de7ebe09e99a)
+
+The architecture diagram illustrates the following components:
+- **Feature Extractor**: This component takes an input image and extracts relevant features using a pre-trained backbone network.
+- **Neck**: This intermediate part processes the extracted features and prepares them for the detection head. It typically involves upsampling and concatenation operations.
+- **Detection Head**: This final component predicts bounding boxes and class probabilities for the detected objects. It often uses a feature pyramid network (FPN) to handle objects of different sizes.
 
 ## Testing
 Here are few images after running our trained model on test images
